@@ -1,0 +1,31 @@
+﻿<Window x:Class="PR1925.UsersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR1925"
+        mc:Ignorable="d"
+        Title="Пользователь" Height="450" Width="800"  Icon="/Resources/chat.ico" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" 
+                    Grid.Row="0"
+                    Background="{StaticResource firstColor}">
+            <Image Source="/Resources/chat.png"
+                   Margin="10,0,0,0"
+                   RenderOptions.BitmapScalingMode="HighQuality"/>
+            <Label Content="111222"
+                       FontSize="25"
+                       VerticalAlignment="Center"
+                       Margin="450,0,0,0"
+                       FontFamily="Times New Roman"
+                   FontWeight="Bold"
+                   x:Name="fullNameLabel"
+                   Foreground="White"/>
+           
+        </StackPanel>
+    </Grid>
+</Window>
